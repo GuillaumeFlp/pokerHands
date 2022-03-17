@@ -1,0 +1,64 @@
+{
+  "name": "pocker-hands-back",
+  "version": "1.0.0",
+  "description": "The project consists of comparing several pairs of poker hands and indicating which one has the highest rank",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "test": "jest --collectCoverage --forceExit"
+  },
+  "author": "Guillaume FILIPE",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.27.4",
+    "fastify-cors": "^6.0.3",
+    "fastify-socket.io": "^3.0.0",
+    "fastify-static": "^4.5.0",
+    "winston": "^3.6.0",
+    "winston-daily-rotate-file": "^4.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "jest-html-reporters": "^3.0.6",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/*.test.js"
+    ],
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "./coverage-report",
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    },
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporters",
+        {
+          "publicPath": "./tests-report",
+          "filename": "report.html",
+          "expand": true
+        }
+      ]
+    ]
+  }
+}

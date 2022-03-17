@@ -1,0 +1,14 @@
+{
+  "EnterYourName": "Veuillez entrer votre nom",
+  "name": "Nom",
+  "confirm": "Valider",
+  "getCards": "Obtenir des cartes",
+  "compare": "Comparer",
+  "close": "Fermer",
+  "result": "Résultat",
+  "winnerText": "Le gagnant est {{ name }} avec la main {{ hand }}",
+  "themeSelection": "Sélection du thème",
+  "theme": "Thème",
+  "languageSelection": "Sélection de la langue",
+  "language": "Langue"
+}
